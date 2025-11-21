@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal profile of Jason — basic details, location and contactable information.">
+    <title>About Jason</title>
+    <style>
+        /* Basic CSS for better readability */
+        :root {
+            --brand: #007bff;
+            --bg: #f8f8f8;
+            --text: #333;
+            --muted: #777;
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            line-height: 1.6;
+            background-color: var(--bg);
+            color: var(--text);
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: var(--brand);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+        main {
+            background-color: white;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: var(--brand);
+            border-bottom: 2px solid var(--brand);
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        dl {
+            margin: 0;
+        }
+        dt {
+            font-weight: bold;
+            margin-top: 12px;
+        }
+        dd {
+            margin: 0 0 8px 0;
+            padding-left: 6px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        li::before {
+            content: "•";
+            color: var(--brand);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: var(--muted);
+        }
+
+        /* Accessibility: skip link */
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: -999px;
+            background: #000;
+            color: #fff;
+            padding: 8px 12px;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            left: 16px;
+            top: 16px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div class="container">
+        <header role="banner">
+            <h1>Profile of Jason</h1>
+        </header>
+
+        <main id="main" role="main" aria-labelledby="profile-heading">
+            <section>
+                <h2 id="profile-heading">My Name</h2>
+                <p>My name is <strong>Jason</strong>.</p>
+            </section>
+
+            <section>
+                <h2>Personal Details</h2>
+                <dl>
+                    <dt>Height</dt>
+                    <dd>6&#39;3&#34;</dd>
+                    <dt>Age</dt>
+                    <dd>19 years old</dd>
+                </dl>
+            </section>
+
+            <section>
+                <h2>Location</h2>
+                <p>I currently live in <strong>East Legon</strong>, Accra.</p>
+            </section>
+        </main>
+
+        <footer role="contentinfo">
+            <p>&copy; 2025 Jason's Profile</p>
+        </footer>
+    </div>
+</body>
+</html>
