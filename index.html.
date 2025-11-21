@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Jason</title>
+    <style>
+        /* Basic CSS for better readability */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        li::before {
+            content: "•";
+            color: #007bff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Profile of Jason</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>My Name</h2>
+            <p>My name is <strong>Jason</strong>.</p>
+        </section>
+
+        <section>
+            <h2>Personal Details</h2>
+            <ul>
+                <li><strong>Height:</strong> 6 feet 3 inches ($6'3"$).</li>
+                <li><strong>Age:</strong> 19 years old.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Location</h2>
+            <p>I currently live in <strong>East Legon</strong>, Accra.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align: center; margin-top: 30px; color: #777;">&copy; 2025 Jason's Profile</p>
+    </footer>
+
+</body>
+</html>
